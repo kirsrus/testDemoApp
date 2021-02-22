@@ -1,0 +1,33 @@
+# Информация о текущем хосте
+type HostInfo {
+    uptime: Int!
+    hostName: String!
+    hostID: String!
+    os: String!
+    platform: String!
+    platformFamily: String!
+    platformVersion: String!
+    kernelVersion: String!
+    kernelArch: String!
+    virtualizationSystem: String!
+    virtualizationRole: String!
+}
+
+# Описание единичного процесса
+type ProcessItem {
+    name: String!
+    pid: Int!
+    vms: Int!
+    hwm: Int!
+}
+
+# Информация о CPU
+type CpuInfo {
+    cpu: Int!
+}
+
+type Query {
+    hostInfo: HostInfo!
+    processInfo: [ProcessItem]!
+    cpuInfo: CpuInfo!
+}

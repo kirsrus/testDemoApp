@@ -1,0 +1,100 @@
+<mat-toolbar id="logo" class="toolbox">
+<!-- toolbox-en  style="background-image: url(assets/brand/mlt-logo-{{ currentLang }}.svg);" -->
+  <mat-toolbar-row>
+    <span class="title-icons">
+      <button
+        mat-icon-button
+        aria-label="Меню"
+        (click)="sidenavOpened = !sidenavOpened"
+        *ngIf="currentUser"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+    </span>
+
+    <!--    <div class="site-title">-->
+    <!--      <div i18n>МЛТ</div>-->
+    <!--      <div>Медицинские технологии</div>-->
+    <!--    </div>-->
+
+<!--    <img src="assets/brand/mlt-logo-{{ currentLang }}.svg">-->
+
+    <span class="spacer"></span>
+
+    <span class="title-icons">
+
+      <!-- Конопка выбора тем -->
+      <button mat-button (click)="selectTheme()" i18n-title title="Смена темы">
+        <mat-icon *ngIf="currentThemeLight">brightness_3</mat-icon>
+        <mat-icon *ngIf="!currentThemeLight">wb_sunny</mat-icon>
+      </button>
+
+      <span class="vl" *ngIf="currentUser"></span>
+
+      <!-- Кнопка разлогирования -->
+      <button mat-button
+              i18n-title
+              title="Выход"
+              *ngIf="currentUser"
+              (click)="logout()"
+      >
+        <mat-icon>power_settings_new</mat-icon>
+      </button>
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<!-- Меню -->
+<mat-sidenav-container>
+  <mat-sidenav
+    mode="side"
+    [(opened)]="sidenavOpened"
+    *ngIf="currentUser"
+  >
+
+    <!--    <a  routerLink="/" >-->
+
+    <!--      Главная страница-->
+    <!--    </a>-->
+
+    <button mat-button class="nav-button" routerLink="/">
+      <mat-icon class="menu-icon">assignment_returned</mat-icon>
+      &nbsp;&nbsp;
+      <span i18n>Главная страница</span>
+    </button>
+
+    <hr class="menu-hr">
+
+    <button mat-button class="nav-button" routerLink="/console">
+      <mat-icon class="menu-icon">airplay</mat-icon>
+      &nbsp;&nbsp;
+      <span i18n>Консоль</span>
+    </button>
+
+    <hr class="menu-hr">
+
+    <button mat-button class="nav-button" routerLink="/about">
+      <mat-icon class="menu-icon">copyright</mat-icon>
+      &nbsp;&nbsp;
+      <span i18n>О программе</span>
+    </button>
+
+    <hr class="menu-hr">
+
+    <button mat-button class="nav-button" (click)="logout()">
+      <mat-icon class="menu-icon">power_settings_new</mat-icon>
+      &nbsp;&nbsp;
+      <span i18n>Выйти</span>
+    </button>
+
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <!-- Контент страниц в роутинге -->
+
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

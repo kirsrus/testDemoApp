@@ -1,0 +1,81 @@
+.menu-icon {
+  color: darkgrey;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content {
+  padding: 16px;
+}
+
+mat-sidenav {
+  //background: lightcoral;
+  background: #e9e8e8;
+  width: 300px;
+}
+
+
+.nav-button {
+  min-width: 100%;
+  text-align: left;
+}
+
+.menu-hr {
+  border: 0;
+  height: 1px;
+  background: #c6c6c6;
+}
+
+.title-icons {
+  color: darkgrey;
+}
+
+.vl {
+  border-left: 1px solid #c6c6c6;
+  height: 15px;
+}
+
+.toolbox {
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  //z-index: 998;
+  //background-image: url(/assets/brand/mlt-logo-ru.svg);
+  background-size: 140px;
+  background-repeat: no-repeat;
+  background-position: 75px 5px;
+
+  border-bottom: 2px solid #c6c6c6;
+
+}
+
+//.toolbox-ru {}
+
+//.toolbox-en {
+//  background-image: url(/assets/brand/mlt-logo-en.svg);
+//}
+
+//.toolbox-zh {
+//  background-image: url(/assets/brand/mlt-logo-zh.svg);
+//}
+
+.site-title {
+  display: inline;
+  padding-left: 30px;
+  font-weight: normal;
+
+  div:first-child {
+    font-size: 1.75rem;
+  }
+
+  div:last-child {
+    font-size: 1rem;
+  }
+}

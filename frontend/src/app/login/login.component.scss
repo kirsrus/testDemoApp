@@ -1,0 +1,41 @@
+.card {
+  max-width: 300px;
+}
+
+.form {
+
+}
+
+.full-width {
+  width: 100%;
+}
+
+.action {
+  //text-align: right;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70%;
+  min-width: 100%;
+}
+
+
+.alert {
+  background: #f8aaaa;
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.flag {
+  text-align: right;
+  padding-top: 10px;
+  img {
+    padding-right: 10px;
+  }
+}

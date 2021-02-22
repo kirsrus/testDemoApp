@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="ru" datatype="plaintext" original="ng2.template" target-language="zh">
+    <body>
+      <trans-unit id="6414216013073091225" datatype="html">
+        <source>Смена темы</source><target state="new">更改主题</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.html</context><context context-type="linenumber">27</context></context-group></trans-unit><trans-unit id="3748639791186033478" datatype="html">
+        <source>Выход</source><target state="new">输出量</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.html</context><context context-type="linenumber">37</context></context-group></trans-unit><trans-unit id="476455178969645283" datatype="html">
+        <source>Главная страница</source><target state="new">主页</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.html</context><context context-type="linenumber">64</context></context-group></trans-unit><trans-unit id="7208478528742993640" datatype="html">
+        <source>Консоль</source><target state="new">安慰</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit><trans-unit id="9044940825787368887" datatype="html">
+        <source>Выйти</source><target state="new">注销</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/app.component.html</context><context context-type="linenumber">88</context></context-group></trans-unit><trans-unit id="2134818061252133833" datatype="html">
+        <source>Консоль управления сервером</source><target state="new">服务器管理控制台</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/console/console.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit><trans-unit id="6794970435803731046" datatype="html">
+        <source> Ваш браузер не поддерживает плавающие фреймы! </source><target state="new"> 您的浏览器不支持iframe！ </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/console/console.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit><trans-unit id="1312957039352242620" datatype="html">
+        <source>Выполняемые на компьютере процессы</source><target state="new">在计算机上运行的进程</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit><trans-unit id="3509244808724765319" datatype="html">
+        <source>Имя процесса</source><target state="new">工艺名称</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit><trans-unit id="4065652730718831916" datatype="html">
+        <source>PID процесса</source><target state="new">工艺PID</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit><trans-unit id="8835569498280766704" datatype="html">
+        <source>Информация о хосте</source><target state="new">主机信息</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit><trans-unit id="8426213069509710744" datatype="html">
+        <source>Имя хоста</source><target state="new">主机名</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit><trans-unit id="3662141931045627439" datatype="html">
+        <source>ID хоста</source><target state="new">主机编号</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit><trans-unit id="1401709579084294441" datatype="html">
+        <source>ОС</source><target state="new">操作系统</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit><trans-unit id="8015561934669348186" datatype="html">
+        <source>Платформа</source><target state="new">平台</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit><trans-unit id="4908653787376969478" datatype="html">
+        <source>Семейство платформы</source><target state="new">平台家族</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit><trans-unit id="6492546337829262964" datatype="html">
+        <source>Версия</source><target state="new">版</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit><trans-unit id="7007848238712339551" datatype="html">
+        <source>Версия ядра</source><target state="new">内核版本</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit><trans-unit id="617272625192581769" datatype="html">
+        <source>Архитектура ядра</source><target state="new">内核架构</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit><trans-unit id="5640579362631941831" datatype="html">
+        <source>О программе</source><target state="new">关于程序</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/about/about.component.html</context><context context-type="linenumber">3</context></context-group><context-group purpose="location"><context context-type="sourcefile">src/app/app.component.html</context><context context-type="linenumber">80</context></context-group></trans-unit><trans-unit id="2111533296307194150" datatype="html">
+        <source> Авторизация </source><target state="new"> 授权书 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3916630421304653474" datatype="html">
+        <source> Введите свой логин и пароль </source><target state="new"> 输入您的登录名和密码 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4008850725912515888" datatype="html">
+        <source>Логин</source><target state="new">登录</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="209276107447675696" datatype="html">
+        <source>Введите логин латинскими буквами</source><target state="new">用拉丁字母输入您的登录信息</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/login/login.component.html</context><context context-type="linenumber">19</context></context-group></trans-unit>
+      <trans-unit id="5089199220175449046" datatype="html">
+        <source>Пароль</source><target state="new">密码</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/login/login.component.html</context><context context-type="linenumber">29</context></context-group></trans-unit>
+      <trans-unit id="7465806014970497919" datatype="html">
+        <source>Введите пароль латинскими буквами</source><target state="new">用拉丁字母输入密码</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/login/login.component.html</context><context context-type="linenumber">31</context></context-group></trans-unit><trans-unit id="6226153132877476748" datatype="html">
+        <source>Войти</source><target state="new">进来</target>
+        
+      <context-group purpose="location"><context context-type="sourcefile">src/app/login/login.component.html</context><context context-type="linenumber">56</context></context-group></trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,10 @@
+dist/
+vendor/
+assets/zh
+assets/ru
+assets/en
+.vscode/
+.idea/
+*.log
+*.exe
+*.drawio
