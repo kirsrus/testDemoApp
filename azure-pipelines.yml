@@ -14,6 +14,7 @@ variables:
   GOROOT: '/usr/local/go1.13' # Go installation path
   GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
   modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
+  workDir: '$(modulePath)/backend'  # Project working directory
 
 steps:
 - script: |
@@ -31,10 +32,12 @@ steps:
     echo 'GOBIN: $(GOBIN)'
     echo 'GOPATH: $(GOPATH)'
     echo 'GOROOT: $(GOROOT)'
-    echo 'System.DefaultWorkingDirectory: $(System.DefaultWorkingDirectory)'
-    echo 'build.repository.name: $(build.repository.name)'
     echo 'modulePath: $(modulePath)'
+    echo 'workDir: $(workDir)'
+    echo 'System.DefaultWorkingDirectory: $(System.DefaultWorkingDirectory)'
     echo 'System.TeamProject: $(System.TeamProject)'
+    echo 'Build.Repository.Name: $(build.repository.name)'
+    echo 'Build.Repository.LocalPath: $(Build.Repository.LocalPath)'
     echo 'Build.ArtifactStagingDirectory: $(Build.ArtifactStagingDirectory)'
   displayName: 'Variables'
 
@@ -56,15 +59,23 @@ steps:
 #  displayName: 'Get dependencies, then build'
 
 - task: GoTool@0
+  displayName: 'Use Go 1.15.7'
   inputs:
-    version: '1.13.5'
-  displayName: 'Use Go 1.13.5'
+    version: '1.15.7'
 - task: Go@0
+  displayName: 'go get'
   inputs:
     command: 'get'
     arguments: '-d'
-    workingDirectory: '$(modulePath)'
-  displayName: 'go get'
-
-
+    workingDirectory: '$(workDir)'
+- task: Go@0
+  displayName: 'go build'
+  inputs:
+    command: 'build'
+    workingDirectory: '$(workDir)'
+- task: ArchiveFiles@2
+  displayName: 'Archive files'
+  inputs:
+    rootFolderOrFile: '$(Build.Repository.LocalPath)'
+    includeRootFolder: False
 
