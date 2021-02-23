@@ -62,6 +62,12 @@ steps:
   displayName: 'Use Go 1.15.7'
   inputs:
     version: '1.15.7'
+    
+
+- script: |
+    go version
+  displayName: 'go version'  
+
 - task: Go@0
   displayName: 'go get'
   inputs:
