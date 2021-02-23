@@ -11,7 +11,7 @@ pool:
 
 variables:
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
-  GOROOT: '/usr/local/go1.15' # Go installation path
+  GOROOT: '/usr/local/go1.13' # Go installation path
   GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
   modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
 
@@ -27,6 +27,17 @@ steps:
     echo '##vso[task.prependpath]$(GOROOT)/bin'
   displayName: 'Set up the Go workspace'
 
+- script: |
+    echo 'GOBIN: $(GOBIN)'
+    echo 'GOPATH: $(GOPATH)'
+    echo 'GOROOT: $(GOROOT)'
+    echo 'System.DefaultWorkingDirectory: $(System.DefaultWorkingDirectory)'
+    echo 'build.repository.name: $(build.repository.name)'
+    echo 'modulePath: $(modulePath)'
+    echo 'System.TeamProject: $(System.TeamProject)'
+    echo 'Build.ArtifactStagingDirectory: $(Build.ArtifactStagingDirectory)'
+  displayName: 'Variables'
+
 #- script: |
 #    go version
 #    go get -v -t -d ./...
@@ -36,11 +47,24 @@ steps:
 #    fi
 #    go build -v .
 
-- script: |
-    go version
-    cd backend
-    go get -v -t -d ./...
-    go build -v
+# - script: |
+#    go version
+#    cd backend
+#    go get -v -t -d ./...
+#    go build -v
+#  workingDirectory: '$(modulePath)'
+#  displayName: 'Get dependencies, then build'
 
-  workingDirectory: '$(modulePath)'
-  displayName: 'Get dependencies, then build'
+- task: GoTool@0
+  inputs:
+    version: '1.13.5'
+  displayName: 'Use Go 1.13.5'
+- task: Go@0
+  inputs:
+    command: 'get'
+    arguments: '-d'
+    workingDirectory: '$(modulePath)'
+  displayName: 'go get'
+
+
+
